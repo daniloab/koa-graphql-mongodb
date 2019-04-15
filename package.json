@@ -5,14 +5,18 @@
   "license": "MIT",
   "scripts": {
     "start": "pm2 start src/server.js",
-    "kill": "pm2 kill"
+    "kill": "pm2 kill",
+    "init": "pm2 init"
   },
   "dependencies": {
+    "global": "^4.3.2",
     "graphql": "^14.2.1",
     "koa": "^2.7.0",
     "koa-graphql": "^0.8.0",
     "koa-mount": "^4.0.0",
     "mongoose": "^5.5.1",
     "pm2": "^3.5.0"
-  }
+  },
+  "repository": "git@github.com:daniloab/koa-graphql-mongodb.git",
+  "author": "Danilo Assis <danilo.botaro@tribofox.com.br>"
 }
