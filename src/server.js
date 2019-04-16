@@ -1,3 +1,4 @@
+require('dotenv').config()
 const Koa = require('koa')
 
 const mount = require('koa-mount');
