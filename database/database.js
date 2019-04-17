@@ -1,8 +1,9 @@
+require('now-env')
 const mongoose = require('mongoose')
 
 const initDB = () => {
     mongoose.connect(
-        process.env.SECRET,
+        process.env.secret,
         { useNewUrlParser: true }
     )
 

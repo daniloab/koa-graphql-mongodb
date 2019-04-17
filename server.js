@@ -14,7 +14,7 @@ const app = new Koa()
 app.use(cors())
 app.listen(process.env.PORT || 9000)
 
-app.use(mount('/graph', graphqlHTTP({
+app.use(mount('/graphql', graphqlHTTP({
     schema: schema,
     graphiql: true
 })))

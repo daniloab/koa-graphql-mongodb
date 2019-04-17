@@ -1,12 +1,18 @@
 {
   "version": 2,
   "builds": [
-    { "src": "*.js", "use": "@now/node-server" }
+    {
+      "src": "*.js",
+      "use": "@now/node-server"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "server.js" }
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
   ],
   "env": {
-    "SECRET": "@my-secret-key"
+    "secret":"@mongodb_uri_secret"
   }
 }
