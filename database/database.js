@@ -2,8 +2,7 @@ const mongoose = require('mongoose')
 
 const initDB = () => {
     mongoose.connect(
-        // process.env.MONGODB_URI,
-        'mongodb://danassis:daniloe3r4tkd@ds239936.mlab.com:39936/first-koa-graphql-mongodb',
+        process.env.SECRET,
         { useNewUrlParser: true }
     )
 
